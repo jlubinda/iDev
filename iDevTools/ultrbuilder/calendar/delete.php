@@ -1,0 +1,1 @@
+deleteEvent($_REQUEST["vCode"]);

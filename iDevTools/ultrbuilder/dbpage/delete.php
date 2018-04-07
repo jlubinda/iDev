@@ -1,0 +1,1 @@
+deletePost($_REQUEST["vCode"]);
