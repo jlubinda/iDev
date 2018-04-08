@@ -1,0 +1,11 @@
+
+						
+						<div style="margin:5px; float: left; padding:5px; background-color:#444; width:93%;">
+						<u><strong>CONDITION OF TYRES</strong></u><br>
+							<div style="float: left; padding:7px; width:93%;">
+								<label style="float: left; background-color:#000; padding:4px; margin:4px;">GOOD: <input name="condition_of_tyres" type="radio" value="GOOD" style="width: 12px; height: 12px;"></label>
+								<label style="float: right; background-color:#000; padding:4px; margin:4px;">AVERAGE: <input name="condition_of_tyres" type="radio" value="AVERAGE" style="width: 12px; height: 12px;"></label>
+								<label style="float: right; background-color:#000; padding:4px; margin:4px;">BAD: <input name="condition_of_tyres" type="radio" value="BAD" style="width: 12px; height: 12px;"></label>
+							</div>
+							<div style="float: left; padding:7px;"><b>COMMENTS:</b> </div><div style="float: right;"><input name="condition_of_tyres_comments" type="text" size="30" value="<?php echo $_REQUEST['modelcomments']; ?>"></div>
+						</div>
