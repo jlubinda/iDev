@@ -57,8 +57,8 @@ if(function_exists('DirectPayAPIKey'))
 else
 {
 	function DirectPayAPIKey(){
-		return '0E523DB7-0FBA-453A-9B18-A1446F0B09F6'; //live
-		//return 'D7E04568-FECD-4CDD-84BF-E5716FE77F62'; //test
+		return 'jhbbjhb-jjnkjnkjnbgvffct'; //live
+		//return 'kjhvfcdvhgb09-hjnhgbvfcfdcgfvg'; //test
 	}
 }
 
