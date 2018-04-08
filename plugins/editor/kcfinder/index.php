@@ -1,1 +1,5 @@
+<?php
 
+require "browse.php";
+
+?>
