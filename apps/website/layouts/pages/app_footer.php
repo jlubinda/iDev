@@ -75,11 +75,9 @@
                 <ul>
                   <li><a class="grey-text text-lighten-3" href="?ref=aboutus.php">About us</a></li>
                   <li><a class="grey-text text-lighten-3" href="?ref=news/">News</a></li>
-                  <li><a class="grey-text text-lighten-3" href="?ref=enviroment.php">Enviroment</a></li>
-                  <li><a class="grey-text text-lighten-3" href="?ref=careers.php">Careers</a></li>
-				  <li><a class="grey-text text-lighten-3" href="?ref=privacy.php">Privacy</a></li>
-                   <li><a class="grey-text text-lighten-3" href="?ref=terms.php">Terms</a></li>
-				  <li><a class="grey-text text-lighten-3" href="?ref=contact.php">Contacts</a></li>  
+		  <li><a class="grey-text text-lighten-3" href="?ref=privacy.php">Privacy</a></li>
+                  <li><a class="grey-text text-lighten-3" href="?ref=terms.php">Terms</a></li>
+		  <li><a class="grey-text text-lighten-3" href="?ref=contact.php">Contacts</a></li>  
                 </ul>
               </div><!--col-->
               
