@@ -1,9 +1,6 @@
 <?php
 
-$dbname = "uagrosite";
-$dbuser = "root";
-$dbpassword = "";
-$dbhost = "localhost";
+include "dbu.php";
 
 $db = mysqli_connect($dbhost, $dbuser, $dbpassword,$dbname);
 if(mysqli_connect_errno())
