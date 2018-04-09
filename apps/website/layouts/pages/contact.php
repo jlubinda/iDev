@@ -1,6 +1,9 @@
 <div class="container" style="margin-top:90px;">
 	<div class="card-panel z-depth-5">
 		<div class="row">
+			<h2>Contact Us</h2> 
+		</div>
+		<div class="row">
 			<div class="col s12 m6">
 				<h3 class="header center grey-text text-darken-3"> Send us A quick Message</h3>
 				<br>
