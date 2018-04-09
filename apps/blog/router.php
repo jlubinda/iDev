@@ -38,11 +38,11 @@ $return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,'fa
 
 if($return==0)
 {
-	$GLOBALS["THEME"] = $GLOBALS["THEME"]+1;
+	$return;
 }
 else
 {
-	$GLOBALS["THEME"] = $GLOBALS["THEME"];
+	$return;
 }
 
 ?>
