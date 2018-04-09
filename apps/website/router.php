@@ -25,7 +25,7 @@ $return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,'lo
 
 if($return==0)
 {
-	$return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,$current,'pages','function',$types,$_REQUEST["ref"],$_REQUEST["extn"]);
+	$return = $return;
 }
 else
 {
