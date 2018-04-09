@@ -52,6 +52,7 @@ $refx = $refu[0];
 				<?php
 			}
 			?>
+			<li><a href="?ref=news/">News</a></li>
 			<li><a href="?ref=contactus.php">Contact</a></li> 
 			<li><a href="?ref=faqs.php">FAQS</a></li>
 			<li><?php cartIcon(); ?></li>
@@ -105,6 +106,7 @@ $refx = $refu[0];
 				<?php
 			}
 			?>
+			<li><a href="?ref=news/">News</a></li>
 			<li><a href="?ref=contactus.php">Contact</a></li> 
 			<li><a href="?ref=faqs.php">FAQS</a></li>
 			<li><?php cartIcon2(); ?></li>
