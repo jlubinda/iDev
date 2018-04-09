@@ -1,13 +1,12 @@
-<div class="container">    
-    <section class="row" style="background-image: url('apps/website/resources/images/banner_privacy.jpg'); background-position: 0 -20px; background-size:100%; height:180px; width:100%;">&nbsp;
-	</section>
-	<section class="row">
-		<h2>
-			Privacy
-		</h2>            
-		<article>
-			<?php echo getPrivacy();?>
-		</article>
-		<br class="clear"/>     
-	</section>
-</div>
+<div class="container" style="margin-top:90px;">
+	<div class="card-panel z-depth-5">
+		<div class="row">
+			<h2>Privacy</h2> 
+		</div>
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<?php echo getPrivacy();?>
+			</div>
+		</div><!--row-->
+	</div><!--card-->
+</div><!--conatiner-->
