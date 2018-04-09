@@ -106,7 +106,7 @@
           </div><!--conatiner-->
     <div class="footer-copyright">
       <div class="container">
-       <p>Copyright © Vehicle Portal A Division Of City Drive Rent a Car. All rights Reserved</p>
+       <p>Copyright © PayItApp Limited. All rights Reserved</p>
        <br>
       </div>
     </div>
@@ -115,19 +115,7 @@
 <!--End mc_embed_signup-->
   
   
-  <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5947d11ae9c6d324a47362a0/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+
   
 
 <!--  Scripts-->
@@ -163,248 +151,6 @@ if($GLOBALS["croppieSettings"]==1)
 		cvr.style.display = "none";
 		dlg.style.display = "none";
 		document.body.style.overflowY = "scroll";
-	}
-	
-	
-	function updateVehiclePrices(vehicle_id,newfees_within,newfees_outside,newfees_ooc,new_currency,new_country=""){
-		
-		var endpoint = "apps/annime/add/VehiclePrice/"+vehicle_id;
-		showPopUp("applodesDialog");
-		$.ajax({
-		  url: "<?php echo API_URL();?>/<?php echo API_VERSION();?>/<?php echo API_KEY();?>/<?php echo API_OUTPUT_FORMAT();?>/<?php echo API_DATA_CENTRE();?>/<?php echo API_ENVIRONMENT();?>/"+endpoint,
-		  type: "POST",
-		  data: {localrate: newfees_within, ootrate: newfees_outside, oocrate: newfees_ooc, currency: new_currency, country: new_country },
-		  success:function(response) {
-			  
-			var obj = jQuery.parseJSON(response);
-			
-			//$("#MyModal").openModal();
-			//$("#MyModal").closeModal();
-			
-			if(obj.status=="success")
-			{
-			   closePopUp("applodesDialog");
-			   showPopUp("applodesSuccess");
-			   setTimeout(function () {
-				  closePopUp("applodesSuccess");
-				}, 1500);
-			}
-			else if(obj.status=="notice")
-			{
-			   closePopUp("applodesDialog");
-			   showPopUp("applodesNotice",obj.statuscode,obj.message);
-			   setTimeout(function () {
-				  closePopUp("applodesNotice");
-				}, 1500);
-			}
-			else
-			{
-			   closePopUp("applodesDialog");
-			   showPopUp("applodesError",obj.statuscode,obj.message);
-			   setTimeout(function () {
-				  closePopUp("applodesError");
-				}, 1500);
-			}
-		  }
-		});
-	}
-	
-	
-	function editVehiceDetails(vehicle_id,vehiclemake,vehicletype,vehicle_color,vehicle_weight,enginesize,fueltype,conrate,tanksize,enginenumber,chassisnumber,transmission,seats,yearmake,doors,aircon,entertainment,safety,owner,owner_type,town,province,country="Zambia"){
-		
-		var endpoint = "apps/annime/edit/vehicles/"+vehicle_id;
-		showPopUp("applodesDialog");
-		$.ajax({
-		  url: "<?php echo API_URL();?>/<?php echo API_VERSION();?>/<?php echo API_KEY();?>/<?php echo API_OUTPUT_FORMAT();?>/<?php echo API_DATA_CENTRE();?>/<?php echo API_ENVIRONMENT();?>/"+endpoint,
-		  type: "POST",
-		  data: {vehiclemake: vehiclemake, vehicletype: vehicletype, vehicle_color: vehicle_color, vehicle_weight: vehicle_weight, enginesize: enginesize, fueltype: fueltype, conrate: conrate, tanksize: tanksize, enginenumber: enginenumber, chassisnumber: chassisnumber, transmission: transmission, seats: seats, yearmake: yearmake, doors: doors, aircon: aircon, entertainment: entertainment, safety: safety, owner: owner, owner_type: owner_type, town: town, province: province, country: country },
-		  success:function(response) {
-			  
-			var obj = jQuery.parseJSON(response);
-			
-			//$("#MyModal").openModal();
-			//$("#MyModal").closeModal();
-			
-			if(obj.statuscode=="0000")
-			{
-			   closePopUp("applodesDialog");
-			   showPopUp("applodesSuccess");
-			   setTimeout(function () {
-				  closePopUp("applodesSuccess");
-				  window.open('./?ref=profile/yourvehicles.php'); 
-				}, 1500);
-			}
-			else
-			{
-			   closePopUp("applodesDialog");
-			   showPopUp("applodesError",obj.statuscode,obj.message);
-			   setTimeout(function () {
-				  closePopUp("applodesError");
-				  window.open('./?ref=profile/yourvehicles.php&id='+vehicle_id+'&function=edit&type=vehicle'); 
-				}, 1500);
-			}
-		  }
-		});
-	}
-	
-	
-	function addMaintenanceDetails(vehicle_id,works_type,details_of_works,parts_removed,parts_added,mileage,mechanic){
-		
-		var endpoint = "apps/annime/add/MainenanceDetails/"+vehicle_id;
-		showPopUp("applodesDialog");
-		$.ajax({
-		  url: "<?php echo API_URL();?>/<?php echo API_VERSION();?>/<?php echo API_KEY();?>/<?php echo API_OUTPUT_FORMAT();?>/<?php echo API_DATA_CENTRE();?>/<?php echo API_ENVIRONMENT();?>/"+endpoint,
-		  type: "POST",
-		  data: {works_type: works_type, details_of_works: details_of_works, parts_removed: parts_removed, parts_added: parts_added, mileage: mileage, mechanic: mechanic},
-		  success:function(response) {
-			  
-			var obj = jQuery.parseJSON(response);
-			
-			//$("#MyModal").openModal();
-			//$("#MyModal").closeModal();
-			
-			if(obj.statuscode=="0000")
-			{
-			   closePopUp("applodesDialog");
-			   showPopUp("applodesSuccess");
-			   setTimeout(function () {
-				  closePopUp("applodesSuccess");
-				  window.open('./?ref=profile/yourvehicles.php'); 
-				}, 1500);
-			}
-			else
-			{
-			   closePopUp("applodesDialog");
-			   showPopUp("applodesError",obj.statuscode,obj.message);
-			   setTimeout(function () {
-				  closePopUp("applodesError");
-				  window.open('./?ref=profile/yourvehicles.php&id='+vehicle_id+'&function=edit&type=vehicle'); 
-				}, 1500);
-			}
-		  }
-		});
-	}
-	
-	
-	function addBreakdown(vehicle_id,driver_name,driver_id,details_of_breakdown,details_of_works,mechanic){
-		
-		var endpoint = "apps/annime/add/Breakdown/"+vehicle_id;
-		showPopUp("applodesDialog");
-		$.ajax({
-		  url: "<?php echo API_URL();?>/<?php echo API_VERSION();?>/<?php echo API_KEY();?>/<?php echo API_OUTPUT_FORMAT();?>/<?php echo API_DATA_CENTRE();?>/<?php echo API_ENVIRONMENT();?>/"+endpoint,
-		  type: "POST",
-		  data: {driver_name: driver_name, driver_id: driver_id, details_of_breakdown: details_of_breakdown, details_of_works: details_of_works, mechanic: mechanic},
-		  success:function(response) {
-			  
-			var obj = jQuery.parseJSON(response);
-			
-			//$("#MyModal").openModal();
-			//$("#MyModal").closeModal();
-			
-			if(obj.statuscode=="0000")
-			{
-			   closePopUp("applodesDialog");
-			   showPopUp("applodesSuccess");
-			   setTimeout(function () {
-				  closePopUp("applodesSuccess");
-				  window.open('./?ref=profile/yourvehicles.php'); 
-				}, 1500);
-			}
-			else
-			{
-			   closePopUp("applodesDialog");
-			   showPopUp("applodesError",obj.statuscode,obj.message);
-			   setTimeout(function () {
-				  closePopUp("applodesError");
-				  window.open('./?ref=profile/yourvehicles.php&id='+vehicle_id+'&function=edit&type=vehicle'); 
-				}, 1500);
-			}
-		  }
-		});
-	}
-	
-	
-	function addVehicleMilage(vehicle_id,mileage,notes=""){
-		
-		var endpoint = "apps/annime/add/Mileage/"+vehicle_id;
-		showPopUp("applodesDialog");
-		$.ajax({
-		  url: "<?php echo API_URL();?>/<?php echo API_VERSION();?>/<?php echo API_KEY();?>/<?php echo API_OUTPUT_FORMAT();?>/<?php echo API_DATA_CENTRE();?>/<?php echo API_ENVIRONMENT();?>/"+endpoint,
-		  type: "POST",
-		  data: {mileage: mileage, notes: notes},
-		  success:function(response) {
-			  
-			var obj = jQuery.parseJSON(response);
-			
-			//$("#MyModal").openModal();
-			//$("#MyModal").closeModal();
-			
-			if(obj.statuscode=="0000")
-			{
-			   closePopUp("applodesDialog");
-			   showPopUp("applodesSuccess");
-			   setTimeout(function () {
-				  closePopUp("applodesSuccess");
-				  window.open('./?ref=profile/yourvehicles.php'); 
-				}, 1500);
-			}
-			else
-			{
-			   closePopUp("applodesDialog");
-			   showPopUp("applodesError",obj.statuscode,obj.message);
-			   setTimeout(function () {
-				  closePopUp("applodesError");
-				  window.open('./?ref=profile/yourvehicles.php&id='+vehicle_id+'&function=edit&type=vehicle'); 
-				}, 1500);
-			}
-		  }
-		});
-	}
-	
-	
-	function updateVehicleStatus(vehicle_id,newVehicleStatus){
-		
-		if(newVehicleStatus=="ACTIVE")
-		{
-			var endpoint = "apps/annime/edit/activateVehicleOnVP/"+vehicle_id;
-		}
-		else
-		{
-			var endpoint = "apps/annime/edit/deactivateVehicleOnVP/"+vehicle_id;
-		}
-		
-		showPopUp("applodesDialog");
-		$.ajax({
-		  url: "<?php echo API_URL();?>/<?php echo API_VERSION();?>/<?php echo API_KEY();?>/<?php echo API_OUTPUT_FORMAT();?>/<?php echo API_DATA_CENTRE();?>/<?php echo API_ENVIRONMENT();?>/"+endpoint,
-		  type: "POST",
-		  data: {localrate: vehicle_id },
-		  success:function(response) {
-			  
-			var obj = jQuery.parseJSON(response);
-			
-			//$("#MyModal").openModal();
-			//$("#MyModal").closeModal();
-			
-			if(obj.statuscode=="0000")
-			{
-			   closePopUp("applodesDialog");
-			   showPopUp("applodesSuccess");
-			   setTimeout(function () {
-				  closePopUp("applodesSuccess");
-				  location.reload();
-				}, 1500);
-			}
-			else
-			{
-			   closePopUp("applodesDialog");
-			   showPopUp("applodesError",obj.statuscode,obj.message);
-			   setTimeout(function () {
-				  closePopUp("applodesError");
-				  location.reload();
-				}, 1500);
-			}
-		  }
-		});
 	}
 </script>
 <script src="apps/website/resources/js/jquery-ui.min.js"></script>
@@ -472,19 +218,11 @@ if($GLOBALS["croppieSettings"]==1)
 	$('.dropdown-trigger').dropdown();
 	//$('.modal').modal();
 	$('.collapsible').collapsible();
-	$('.sidenav').sideNav();
-	
-   
-
     }); // end of document ready
 })(jQuery); // end of jQuery name space
 
-
-  
 </script>
 <script src="apps/website/resources/js/jquery.flexslider.js"></script>
-
-
 <!-- The Templates plugin is included to render the upload/download listings -->
 <script src="apps/website/resources/js/tmpl.min.js"></script>
 <!-- The Load Image plugin is included for the preview images and image resizing functionality -->
@@ -505,9 +243,6 @@ if($GLOBALS["croppieSettings"]==1)
 <!-- The other plugins scripts -->
 <!-- zClip http://www.steamdev.com/zclip/ -->
 <script src="apps/website/resources/js/jquery.zclip.js"></script>
-
-
-
 
 <script type="text/javascript">
 	function addHidden(theForm, key, value) {
@@ -544,11 +279,7 @@ if($GLOBALS["croppieSettings"]==1)
     }
 }</script>
 
-
-
-
 <?php cartScripts();?>
-
       <!--  Select-->
 <!--
   <script>
@@ -656,10 +387,6 @@ if($_REQUEST["ref"]=="amend_booking.php")
 
 </script>
 
-
-
-
-
 <script>
 $(document).ready(function() {
     if (typeof window.sessionStorage != undefined) {
@@ -701,5 +428,3 @@ $(document).ready(function() {
 	
 });
  </script>
-
-
