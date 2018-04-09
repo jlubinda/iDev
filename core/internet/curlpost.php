@@ -57,19 +57,19 @@ else
 	function API_KEY($x=""){
 		if((isset($_SESSION[SesUID()]) && !($_SESSION[SesUID()]=="")) && $x=="")
 		{
-			return 'C68C4586644CF8BFF84FDDB0C219FF4C';
+			return '9FB8666C084AB33FB4DCF9CD035161C6';
 		}
 		elseif($x=="provider")
 		{
-			return 'C68C4586644CF8BFF84FDDB0C219FF4C';
+			return '9FB8666C084AB33FB4DCF9CD035161C6';
 		}
 		elseif($x=="login")
 		{
-			return 'C68C4586644CF8BFF84FDDB0C219FF4C';
+			return '9FB8666C084AB33FB4DCF9CD035161C6';
 		}
 		else
 		{
-			return 'C68C4586644CF8BFF84FDDB0C219FF4C';
+			return '9FB8666C084AB33FB4DCF9CD035161C6';
 		}
 	}
 }
