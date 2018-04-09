@@ -27,28 +27,18 @@ $return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,'co
 $return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,'add_company','dashboard/yourcompanies/join.php','file',$types);
 $return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,'join_company','dashboard/yourcompanies/addpersonnel.php','file',$types);
 
-$return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,'addvehicle','dashboard/portal/addvehicle.php','file',$types);
-$return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,'feesschedule','dashboard/portal/feesschedule.php','file',$types);
-$return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,'termowners','dashboard/portal/termowners.php','file',$types);
-$return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,'yourhistory','dashboard/portal/yourhistory.php','file',$types);
-$return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,'yourvehicles','dashboard/portal/yourvehicles.php','file',$types);
+$return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,'test1','dashboard/yourSampleSection/index.php','file',$types);
+$return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,'test2','dashboard/yourSampleSection/test2.php','file',$types);
+$return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,'test3','dashboard/yourSampleSection/test3.php','file',$types);
+$return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,'test4','dashboard/yourSampleSection/test4.php','file',$types);
 
 if($return==0)
 {
 	$return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,$current,'pages','function',$types,$_REQUEST["ref"],$_REQUEST["extn"]);
-	
-	if($return==0)
-	{
-		$GLOBALS["THEME"] = $GLOBALS["THEME"];
-	}
-	else
-	{
-		$GLOBALS["THEME"] = $GLOBALS["THEME"]+1;
-	}
 }
 else
 {
-	$GLOBALS["THEME"] = $GLOBALS["THEME"];
+	$return = $return;
 }
 
 ?>
