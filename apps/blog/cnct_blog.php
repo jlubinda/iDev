@@ -1,9 +1,9 @@
 <?php
 
 $config['db_host2']  = 'localhost';
-$config['db_user2']  = 'applod5_cd_user';
-$config['db_pass2']  = 'Citydrive2017#';
-$config['db_name2']  = 'applod5_blog';
+$config['db_user2']  = 'root';
+$config['db_pass2']  = '';
+$config['db_name2']  = 'blog';
 
 foreach($config as $k => $v){
     define(strtoupper($k),$v);
