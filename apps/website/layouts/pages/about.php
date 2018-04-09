@@ -1,431 +1,113 @@
-     
-
-    
-   
-   
 <div class="container" >
-
 	<div class="row">
 	<div class="col s17 m20 offset-m01 50 offset-04">
 		
 	  <h1 class="header center grey-text text-darken-2">About Us</h1>
 		  <hr>
-			
-				  
-		  
 		 <H3 class="header text_b">Put Faces to a Great Name</H3>
 	 
-    <h5 class="header col s12 light grey-text text-darken-2">Meet City Drives Management that ensures that you recieve a quality unique experience</h5>
-	
-	   
-			
-			
-			<div class="col s12 m4">
-        <div class="card-panel z-depth-4">
-          <div class="row valign-wrapper">
-            <div class="col s4">
-              <img src="apps/website/resources/images/greg.JPG" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-            </div>
-            <div class="col s8">
-              <span class="black-text">
-              <a href="#">Greg Chama <br> Managing Director<span> </span></a>
-                
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-		
-		 	<div class="col s12 m4">
-        <div class="card-panel z-depth-4">
-          <div class="row valign-wrapper">
-            <div class="col s4">
-              <img  src="apps/website/resources/images/mulenga.JPG"  alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-            </div>
-            <div class="col s8">
-              <span class="black-text">
-              <a href="#">Mulenga Bwalya <br> Marketing Manager</span></a>
-                
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-		
-		
-		 	<div class="col s12 m4">
-        <div class="card-panel z-depth-4">
-          <div class="row valign-wrapper">
-            <div class="col s4">
-              <img  src="apps/website/resources/images/chola.JPG"  alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-            </div>
-            <div class="col s8">
-              <span class="black-text">
-              <a href="#">Chola Mtonga<br>Sales Controller </span></a>
-                
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-		
-		
-			<div class="col s12 m4">
-        <div class="card-panel z-depth-4">
-          <div class="row valign-wrapper">
-            <div class="col s4">
-              <img  src="apps/website/resources/images/ruth.JPG"  alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-            </div>
-            <div class="col s8">
-              <span class="black-text">
-              <a href="#">Ruth Mwenda <br> Financial Controller </span></a>
-                
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-		
-		
-		
-		<div class="col s12 m4">
-        <div class="card-panel z-depth-4">
-          <div class="row valign-wrapper">
-            <div class="col s4">
-              <img  src="apps/website/resources/images/charles.JPG"  alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-            </div>
-            <div class="col s8">
-              <span class="black-text">
-              <a href="#">Charles Phiri <br> Senior Logistics Officer </span></a>
-                
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-		
-		<div class="col s12 m4">
-        <div class="card-panel z-depth-4">
-          <div class="row valign-wrapper">
-            <div class="col s4">
-              <img  src="apps/website/resources/images/siwila.JPG"  alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-            </div>
-            <div class="col s8">
-              <span class="black-text">
-              <a href="#">Siwila Minango <br> Senior Finance Administrator </span></a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-		
-		  <br >
-		    <br >
-		    <br >
-		    <br >
-		  
-		  
-		  
-	 <br >	 
- 
-<p>City Drive Rent a Car is a Vibrant, Premier car rental firm with an enthusiastic work force which is dedicated to providing clients with a memorable car rental experience.</p>
-		
-<P>With our Vast Experience and expertise in the industry, no vehicle rental problem is too big for City Drive not to resolve. City Drive is a Zambian based car rental firm with an extensive network in the major economic hubs of the country. Whether you are a tourist, VIP or business traveler flying in to the country for that crucial corporate meeting you are assured of a memorable car rental experience as our products and services are tailor made to suit your needs.
+		    <h5 class="header col s12 light grey-text text-darken-2">Meet the Management team that ensures that you recieve a quality unique experience</h5>
 
-Our team concentrates on your needs and will work tirelessly to ensure that you are provided with a solution to your problems. Simply put ‘Give us a vehicle transport problem and we will give you a Car rental solution’!</p>
+		     <div class="col s12 m4">
+			<div class="card-panel z-depth-4">
+			  <div class="row valign-wrapper">
+			    <div class="col s4">
+			      <img src="apps/website/resources/images/person.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+			    </div>
+			    <div class="col s8">
+			      <span class="black-text">
+			      <a href="#">John Doe <br> Managing Director<span> </span></a>
 
+			      </span>
+			    </div>
+			  </div>
+			</div>
+		     </div>
+		     <div class="col s12 m4">
+			<div class="card-panel z-depth-4">
+			  <div class="row valign-wrapper">
+			    <div class="col s4">
+			      <img  src="apps/website/resources/images/person.jpg"  alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+			    </div>
+			    <div class="col s8">
+			      <span class="black-text">
+			      <a href="#">Jane Doe <br> Marketing Manager</span></a>
 
-<p><b>Mission:</b> To develop and provide unique and innovative transport solutions.</p>
+			      </span>
+			    </div>
+			  </div>
+			</div>
+		      </div>
+		     <div class="col s12 m4">
+			<div class="card-panel z-depth-4">
+			  <div class="row valign-wrapper">
+			    <div class="col s4">
+			      <img  src="apps/website/resources/images/person.jpg"  alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+			    </div>
+			    <div class="col s8">
+			      <span class="black-text">
+			      <a href="#">Arron Doe<br>Sales Controller </span></a>
 
-<p><b>Vision:</b> To Create Value and satisfaction to our customers through our services/products and hence become the transport solution provider of choice.</p>
+			      </span>
+			    </div>
+			  </div>
+			</div>
+		      </div>
+		     <div class="col s12 m4">
+			<div class="card-panel z-depth-4">
+			  <div class="row valign-wrapper">
+			    <div class="col s4">
+			      <img  src="apps/website/resources/images/person.jpg"  alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+			    </div>
+			    <div class="col s8">
+			      <span class="black-text">
+			      <a href="#">Felix Doe <br> Financial Controller </span></a>
 
+			      </span>
+			    </div>
+			  </div>
+			</div>
+		      </div>	
+		      <div class="col s12 m4">
+			<div class="card-panel z-depth-4">
+			  <div class="row valign-wrapper">
+			    <div class="col s4">
+			      <img  src="apps/website/resources/images/person.jpg"  alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+			    </div>
+			    <div class="col s8">
+			      <span class="black-text">
+			      <a href="#">Chris Doe <br> Senior Logistics Officer </span></a>
 
+			      </span>
+			    </div>
+			  </div>
+			</div>
+		      </div>
+		     <div class="col s12 m4">
+			<div class="card-panel z-depth-4">
+			  <div class="row valign-wrapper">
+			    <div class="col s4">
+			      <img  src="apps/website/resources/images/person.jpg"  alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+			    </div>
+			    <div class="col s8">
+			      <span class="black-text">
+			      <a href="#">Trinity Doe <br> Senior Finance Administrator </span></a>
+			      </span>
+			    </div>
+			  </div>
+			</div>
+		      </div>	
+		<br >
+		<br >
+		<br >
+		<br >
+		<br >	 
 
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at pharetra elit, quis pharetra ipsum. Donec purus ex, lobortis vel auctor eget, pulvinar ut ex. Phasellus at aliquam enim. Morbi ornare massa vel finibus scelerisque. Sed sapien tellus, condimentum et ipsum non, viverra tincidunt nibh. Maecenas ac turpis non tortor porttitor tristique et ut odio. Proin sed metus non lectus luctus facilisis. Sed a fermentum velit, eget venenatis leo. Proin purus nulla, pulvinar ut nunc quis, dignissim aliquam dui. Etiam fermentum augue at maximus condimentum. Suspendisse vel massa at leo faucibus ullamcorper. Aenean vel ipsum quam. Morbi malesuada nisi eget dui facilisis tristique.</p>
 
+		<p>Etiam metus lectus, iaculis fermentum diam ut, varius lacinia felis. Quisque mollis nisl sit amet libero fringilla ultrices. Morbi sed placerat dui, nec malesuada tellus. Nam ullamcorper varius congue. Pellentesque congue ipsum quis lectus pretium, sed ullamcorper tortor luctus. Donec luctus nec enim ac maximus. Nunc nec placerat nisl. Proin a sapien quis nibh facilisis tincidunt. Sed condimentum turpis eget tortor gravida, non mollis justo suscipit.</p>
 
-<H3>Values</H3>
-
-
-
-<p>&bull;We at City Drive believe In Zero Tolerance to Corruption and we have cultivated this in to our corporate culture. </p>
-<p>&bull;All employees and Clients are to be respected and treated fairly without prejudice. </p>
-<p>&bull; The customer is the reason we exist. We design and develop products to add value to our customers lives.</p>
-<p>&bull; We believe that all things are possible and through the strength and guidance we receive from the all mighty God we shall work hard to achieve our goals and hence provide satisfaction to our clients.</p>
-<p>&bull; Continuous improvements. City Drive places a high priority in ensuring that it develops new products and services as well as improving the existing ones in order to find new solutions for our clients. This is done through our research and development program.</p>
-
-
-
-	
-		
-		
-		
-		
-				
-				
-			
-			
-			
-			
-		
-		
-		
-			
-		
-		
-		
-
-
-
-
-
-
-		
-			
-			
-			
-			
-			
-			
-			
-			
-			
-		</div>	
-
-
-
-      
-			
-			
-		</div>
+		<p>Suspendisse potenti. Nam in finibus odio. Nam eu pretium sapien. Nunc a ipsum non sapien tincidunt bibendum. Donec bibendum ultrices tellus ac consequat. In hac habitasse platea dictumst. Donec magna augue, sollicitudin sit amet vestibulum quis, suscipit et erat. Suspendisse sed augue nec neque lacinia faucibus sit amet at urna. Vestibulum vitae elit nisi. Nullam tristique vitae velit eget congue. Ut ornare venenatis odio vitae ultrices.</p>		
+	    </div>
 	</div>
 </div>
-
-  
-  
-  
-  
-  
-
-	 
-	 
-	 
-	 
-    
-  <!-- 
-   
-<div class="container" >
-
-	<div class="row">
-	<div class="col s17 m20 offset-m01 50 offset-04">
-		
-	  <h1 class="header center grey-text text-darken-2">About Us</h1>
-		  <hr>
-			
-				  
-		  
-		 <H3 class="header text_b">Put Faces to a Great Name</H3>
-	 
-    <h5 class="header col s12 light grey-text text-darken-2">Meet City Drives Management that ensures that you recieve a quality unique experience</h5>
-	
-	   
-			
-			
-			<div class="col s12 m4">
-        <div class="card-panel z-depth-4">
-          <div class="row valign-wrapper">
-            <div class="col s4">
-              <img src="apps/website/resources/images/greg.jpg" alt="" class="circle responsive-img"> 
-            </div>
-            <div class="col s8">
-              <span class="black-text">
-              <a href="#">Greg Chama <br> Managing Director<span> </span></a>
-                
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-		
-		 	<div class="col s12 m4">
-        <div class="card-panel z-depth-4">
-          <div class="row valign-wrapper">
-            <div class="col s4">
-              <img  src="apps/website/resources/images/mulenga.jpg"  alt="" class="circle responsive-img"> <
-            </div>
-            <div class="col s8">
-              <span class="black-text">
-              <a href="#">Mulenga <br> Marketing Manager</span></a>
-                
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-		
-		
-		 	<div class="col s12 m4">
-        <div class="card-panel z-depth-4">
-          <div class="row valign-wrapper">
-            <div class="col s4">
-              <img  src="apps/website/resources/images/chola.jpg"  alt="" class="circle responsive-img">
-            </div>
-            <div class="col s8">
-              <span class="black-text">
-              <a href="#">Chola Mtonga<br>Sales Controller </span></a>
-                
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-		
-			
-		<div class="col s12 m4">
-        <div class="card-panel z-depth-4">
-          <div class="row valign-wrapper">
-            <div class="col s4">
-              <img  src="apps/website/resources/images/charles.jpg"  alt="" class="circle responsive-img"> 
-            </div>
-            <div class="col s8">
-              <span class="black-text">
-              <a href="#">Charles Phiri <br> Senior Logistics Officer </span></a>
-                
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-			<div class="col s12 m4">
-        <div class="card-panel z-depth-4">
-          <div class="row valign-wrapper">
-            <div class="col s4">
-              <img  src="apps/website/resources/images/ruth.jpg"  alt="" class="circle responsive-img">
-            </div>
-            <div class="col s8">
-              <span class="black-text">
-              <a href="#">Ruth Mwenda <br> Financial Controller </span></a>
-                
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-		
-		
-	
-		
-		<div class="col s12 m4">
-        <div class="card-panel z-depth-4">
-          <div class="row valign-wrapper">
-            <div class="col s4">
-              <img  src="apps/website/resources/images/siwila.JPG"  alt="" class="circle responsive-img"> 
-            </div>
-            <div class="col s8">
-              <span class="black-text">
-              <a href="#">Siwila Minango <br> Senior Finance Administrator </span></a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-		
-		  <br >
-		    <br >
-		    <br >
-		    <br >
-		  
-		  
-		  
-	 <br >	 
- 
-<p>City Drive Rent a Car is a Vibrant, Premier car rental firm with an enthusiastic work force which is dedicated to providing clients with a memorable car rental experience.</p>
-		
-<P>With our Vast Experience and expertise in the industry, no vehicle rental problem is too big for City Drive not to resolve. City Drive is a Zambian based car rental firm with an extensive network in the major economic hubs of the country. Whether you are a tourist, VIP or business traveler flying in to the country for that crucial corporate meeting you are assured of a memorable car rental experience as our products and services are tailor made to suit your needs.
-
-Our team concentrates on your needs and will work tirelessly to ensure that you are provided with a solution to your problems. Simply put ‘Give us a vehicle transport problem and we will give you a Car rental solution’!</p>
-
-
-<p><b>Mission:</b> To develop and provide unique and innovative transport solutions.</p>
-
-<p><b>Vision:</b> To Create Value and satisfaction to our customers through our services/products and hence become the transport solution provider of choice.</p>
-
-
-
-
-
-<H3>Values</H3>
-
-
-
-<p>&bull;We at City Drive believe In Zero Tolerance to Corruption and we have cultivated this in to our corporate culture. </p>
-<p>&bull;All employees and Clients are to be respected and treated fairly without prejudice. </p>
-<p>&bull; The customer is the reason we exist. We design and develop products to add value to our customers lives.</p>
-<p>&bull; We believe that all things are possible and through the strength and guidance we receive from the all mighty God we shall work hard to achieve our goals and hence provide satisfaction to our clients.</p>
-<p>&bull; Continuous improvements. City Drive places a high priority in ensuring that it develops new products and services as well as improving the existing ones in order to find new solutions for our clients. This is done through our research and development program.</p>
-
-
-
-	
-		
-		
-		
-		
-				
-				
-			
-			
-			
-			
-		
-		
-		
-			
-		
-		
-		
-
-
-
-
-
-
-		
-			
-			
-			
-			
-			
-			
-			
-			
-			
-		</div>	
-
-
-
-      
-			
-			
-		</div>
-	</div>
-</div>
-
-  -->
-  
-  
-  
-  
