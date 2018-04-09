@@ -23,101 +23,11 @@ else
 $refs = explode("/",$_REQUEST["ref"]);
 $refu = explode(".",$refs[0]);
 $refx = $refu[0];
-
-if($refx=="")
-{
-	$active1 = ' class="white blue-text"';
-	$active2 = ' class="white-text"';
-	$active3 = ' class="white-text"';
-	$active4 = ' class="white-text"';
-	$active5 = ' class="white-text"';
-	$active6 = ' class="white-text"';
-	$active7 = ' class="dropdown-button white-text"';
-	$active8 = ' class="white-text"';
-}
-elseif($refx=="service_providers" || $refx=="addfirm" || $refx=="addconsultant")
-{
-	$active1 = ' class="white-text"';
-	$active2 = ' class="white blue-text"';
-	$active3 = ' class="white-text"';
-	$active4 = ' class="white-text"';
-	$active5 = ' class="white-text"';
-	$active6 = ' class="white-text"';
-	$active7 = ' class="dropdown-button white-text"';
-	$active8 = ' class="white-text"';
-}
-elseif($refx=="opportunities" || $refx=="add_assignment")
-{
-	$active1 = ' class="white-text"';
-	$active2 = ' class="white-text"';
-	$active3 = ' class="white blue-text"';
-	$active4 = ' class="white-text"';
-	$active5 = ' class="white-text"';
-	$active6 = ' class="white-text"';
-	$active7 = ' class="dropdown-button white-text"';
-	$active8 = ' class="white-text"';
-}
-elseif($refx=="messages")
-{
-	$active1 = ' class="white-text"';
-	$active2 = ' class="white-text"';
-	$active3 = ' class="white-text"';
-	$active4 = ' class="white blue-text"';
-	$active5 = ' class="white-text"';
-	$active6 = ' class="white-text"';
-	$active7 = ' class="dropdown-button white-text"';
-	$active8 = ' class="white-text"';
-}
-elseif($refx=="news")
-{
-	$active1 = ' class="white-text"';
-	$active2 = ' class="white-text"';
-	$active3 = ' class="white-text"';
-	$active4 = ' class="white-text"';
-	$active5 = ' class="white blue-text"';
-	$active6 = ' class="white-text"';
-	$active7 = ' class="dropdown-button white-text"';
-	$active8 = ' class="white-text"';
-}
-elseif($refx=="login")
-{
-	$active1 = ' class="white-text"';
-	$active2 = ' class="white-text"';
-	$active3 = ' class="white-text"';
-	$active4 = ' class="white-text"';
-	$active5 = ' class="white-text"';
-	$active6 = ' class="white blue-text"';
-	$active7 = ' class="dropdown-button white-text"';
-	$active8 = ' class="white-text"';
-}
-elseif($refx==iDevSite("DASHBOARD URL") || $refx=="myadmin" || $refx=="admin" || $refx=="settings")
-{
-	$active1 = ' class="white-text"';
-	$active2 = ' class="white-text"';
-	$active3 = ' class="white-text"';
-	$active4 = ' class="white-text"';
-	$active5 = ' class="white-text"';
-	$active6 = ' class="white-text"';
-	$active7 = ' class="white blue-text dropdown-button"';
-	$active8 = ' class="white-text"';
-}
-elseif($refx=="aboutus")
-{
-	$active1 = ' class="white-text"';
-	$active2 = ' class="white-text"';
-	$active3 = ' class="white-text"';
-	$active4 = ' class="white-text"';
-	$active5 = ' class="white-text"';
-	$active6 = ' class="white-text"';
-	$active7 = ' class="dropdown-button white-text"';
-	$active8 = ' class="white blue-text"';
-}
-
 ?>
 <div class="navbar-fixed">
 	<nav class="grey darken-3 nav-extended">
 		<div class="nav-content">
-			<p style="color:#fff; padding:5px;" align="right">List your car. Earn Extra income monthly on your Vehicle <a href="<?php echo startListing();?>" class="amber darken-4 btn-Small btn ">Start Listing</a></p>
+			<p style="color:#fff; padding:5px;" align="right">Praesent rhoncus consectetur lacus id finibus <a href="<?php echo startListing();?>" class="amber darken-4 btn-Small btn ">Vestibulum Praesent</a></p>
 		</div>
 		<div class="nav-wrapper grey darken-4  z-depth-5">
 		  <a href="./" class="brand-logo"><img src="apps/website/resources/images/logosmall.png"></a>
@@ -125,8 +35,7 @@ elseif($refx=="aboutus")
 		  <ul class="right hide-on-med-and-down">
 					 
 			 <li><a href="./">Home</a></li>
-			 <li><a href="?ref=vehicles.html">Vehicles</a></li>
-			 <li><a href="?ref=howitworks.php">How it works</a></li>
+			 <li><a href="?ref=aboutus.html">About Us</a></li>
 			<?php
 			
 			if(chkSes()=="Inactive")
@@ -163,8 +72,8 @@ elseif($refx=="aboutus")
 				{
 					echo "<img class='circle left' src='apps/website/resources/images/logosmall.png' width='90' style='margin:10px;'> "; 
 				  ?>
-				  <span class="center white-text name"><b>VEHICLE PORTAL</b></span><br>
-				  <span class="white-text name">Your car sharing platform of choice</span>
+				  <span class="center white-text name"><b>iDev</b></span><br>
+				  <span class="white-text name">Create great projects, the easily...</span>
 				  <?php 
 				}
 				else
@@ -172,16 +81,15 @@ elseif($refx=="aboutus")
 					$user = userData();
 					echo "<img class='circle left' src='apps/website/resources/images/logosmall.png' width='90' style='margin:10px;'> ";
 				  ?>
-				  <span class="center white-text name"><b>VEHICLE PORTAL</b></span><br>
-				  <span class="white-text name">Your car sharing platform of choice</span>
+				  <span class="center white-text name"><b>iDev</b></span><br>
+				  <span class="white-text name">Create great projects, the easily...</span>
 				  <?php 
 				}
 				
 			  ?>
-			  <!--<a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>-->
 			  
 			</div>
-			 <li><a href="?ref=vehicles.html">Vehicles</a></li>
+			 <li><a href="?ref=aboutus.html">About Us</a></li>
 			<?php
 			
 			if(chkSes()=="Inactive")
@@ -279,7 +187,6 @@ elseif($refx=="aboutus")
 			 <div class="row grey darken-3" align="center">
 			  <?php echo "<img class='circle left' src='profilepics/".getProfilePicture($user["userID"])."' width='90' style='margin:10px;'> "; ?>
 			  <a href="#!name"><span class="white-text name"> <?php echo $user["FirstName"];?> <?php echo $user["LastName"];?></span></a><br>
-			  <!--<a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>-->
 			  <span class="center white-text name"><b>YOUR PROFILE</b></span>
 			</div>
 			<li><a href="?ref=<?php echo iDevSite("DASHBOARD URL");?>/" style="">&nbsp;&nbsp;<i class="fa fa-home fa-fw"></i>&nbsp;You Details</a></li>
@@ -297,7 +204,7 @@ elseif($refx=="aboutus")
 			 <div class="row grey darken-3" align="center">
 			  <?php echo "<img class='circle left' src='profilepics/".getProfilePicture($user["userID"])."' width='90' style='margin:10px;'> "; ?>
 			  <a href="#!name"><span class="white-text name"> <?php echo $user["FirstName"];?> <?php echo $user["LastName"];?></span></a><br>
-			  <!--<a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>-->
+			  
 			  <span class="center white-text name"><b>YOUR ORGANIZATION</b></span>
 			</div>
 			<li><a href="?ref=<?php echo iDevSite("DASHBOARD URL");?>/" style="">&nbsp;&nbsp;<i class="fa fa-home fa-fw"></i>&nbsp;You Details</a></li>
@@ -312,46 +219,21 @@ elseif($refx=="aboutus")
 	  <ul id="nav-vehicles" class="side-nav ">
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">
-			 <div class="row grey darken-3" align="center">
-			  <?php echo "<img class='circle left' src='profilepics/".getProfilePicture($user["userID"])."' width='90' style='margin:10px;'> "; ?>
-			  <a href="#!name"><span class="white-text name"> <?php echo $user["FirstName"];?> <?php echo $user["LastName"];?></span></a><br>
-			  <!--<a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>-->
-			  <span class="center white-text name"><b>YOUR VEHICLES</b></span>
-			</div>
-			<?php 
-			if(checkAcceptVehicleOwnerTerms($user["userID"])==1)
-			{
-			?>
-			<li><a href="?ref=<?php echo iDevSite("DASHBOARD URL");?>/yourvehicles.php" style="">&nbsp;&nbsp;<i class="fa fa-home fa-fw"></i>&nbsp;Your Vehicles</a></li>
-			<?php
-			}
-			if(checkAcceptVehicleOwnerTerms($user["userID"])==1)
-			{
-			?>
-			<li><a href="?ref=<?php echo iDevSite("DASHBOARD URL");?>/addvehicle.php" style="">&nbsp;&nbsp;<i class="fa fa-pencil fa-fw"></i>&nbsp;Add Vehicle</a></li>
-			<?php
-			}
-			else
-			{
-			?>
-			<li><a href="?ref=<?php echo iDevSite("DASHBOARD URL");?>/addvehicle.php" style="">&nbsp;&nbsp;<i class="fa fa-pencil fa-fw"></i>&nbsp;Start Listing</a></li>
-			<?php
-			}
-			?>
-			<li><a href="?ref=<?php echo iDevSite("DASHBOARD URL");?>/yourhistory.php" style="">&nbsp;&nbsp;<i class="fa fa-unlock fa-fw"></i>&nbsp;Your Hire History</a></li>
-			<?php
-			if(checkAcceptVehicleOwnerTerms($user["userID"])==1)
-			{
-			?>
-			<li><a href="?ref=<?php echo iDevSite("DASHBOARD URL");?>/feesschedule.php" style="">&nbsp;&nbsp;<i class="fa fa-photo fa-fw"></i>&nbsp;Fees Schedule</a></li>
-			<?php
-			}
-			?><li><a href="?ref=<?php echo iDevSite("DASHBOARD URL");?>/termowners.php" style="">&nbsp;&nbsp;<i class="fa fa-file-photo-o fa-fw"></i>&nbsp;Vehicle Owner T & Cs</a></li>
+		 <div class="row grey darken-3" align="center">
+		  <?php echo "<img class='circle left' src='profilepics/".getProfilePicture($user["userID"])."' width='90' style='margin:10px;'> "; ?>
+		  <a href="#!name"><span class="white-text name"> <?php echo $user["FirstName"];?> <?php echo $user["LastName"];?></span></a><br>
+
+		  <span class="center white-text name"><b>YOUR SAMPLE SECTION</b></span>
+		</div>
+		<li><a href="?ref=<?php echo iDevSite("DASHBOARD URL");?>/test1.php" style="">&nbsp;&nbsp;<i class="fa fa-home fa-fw"></i>&nbsp;Your Test 1</a></li>
+		<li><a href="?ref=<?php echo iDevSite("DASHBOARD URL");?>/test2.php" style="">&nbsp;&nbsp;<i class="fa fa-home fa-fw"></i>&nbsp;Your Test 2</a></li>
+		<li><a href="?ref=<?php echo iDevSite("DASHBOARD URL");?>/test2.php" style="">&nbsp;&nbsp;<i class="fa fa-home fa-fw"></i>&nbsp;Your Test 3</a></li>
+		<li><a href="?ref=<?php echo iDevSite("DASHBOARD URL");?>/test3.php" style="">&nbsp;&nbsp;<i class="fa fa-home fa-fw"></i>&nbsp;Your Test 4</a></li>	
           </ul>
         </li>
       </ul>
 	  
-	  <ul id="nav-admin" class="side-nav ">
+	<ul id="nav-admin" class="side-nav ">
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">
 			 <div class="row grey darken-3" align="center">
@@ -367,7 +249,6 @@ elseif($refx=="aboutus")
 		<li><a href="?ref=myadmin/jobs.php">Jobs</a></li>
 		<li><a href="?ref=myadmin/privacy.php">Privacy</a></li>
 		<li><a href="?ref=myadmin/terms.php">Rental Terms</a></li>
-		<li><a href="?ref=myadmin/subterms.php">Car Owner Terms</a></li>
 		<!--<li><a href="?ref=myadmin/password_reset.php">User Password Reset</a></li>-->
 		<?php 
 		}
@@ -383,7 +264,7 @@ elseif($refx=="aboutus")
 			 <div class="row grey darken-3" align="center">
 			  <?php echo "<img class='circle left' src='profilepics/".getProfilePicture($user["userID"])."' width='90' style='margin:10px;'> "; ?>
 			  <a href="#!name"><span class="white-text name"> <?php echo $user["FirstName"];?> <?php echo $user["LastName"];?></span></a><br>
-			  <!--<a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>-->
+			  
 			  <span class="center white-text name"><b>SMS EXPRESS</b></span>
 			</div>
 			<?php
