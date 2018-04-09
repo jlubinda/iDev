@@ -1,0 +1,66 @@
+nav {
+        height: 65px;
+        line-height: 65px;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+        height: 65px;
+        line-height: 65px;
+}
+
+nav .button-collapse i {
+        height: 65px;
+        line-height: 65px;
+}
+
+nav .brand-logo { 
+    font-size: 1rem; 
+}
+
+@media only screen and (min-width: 601px){
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+        height: 65px;
+        line-height: 65px;
+    }
+}
+
+  html {
+    font-family: Calibri, Trebuchet, sans-serif;
+	font-size: 13px;
+  }
+  
+  
+  
+  .slider .indicators .indicator-item {
+  background-color: #666666;
+  border: 3px solid #ffffff;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.slider .indicators .indicator-item.active {
+  background-color: #ffffff;
+}
+.slider {
+  width: 100%;
+  margin: 0 auto;
+}
+.slider .indicators {
+  bottom: 65px;
+  z-index: 100;
+  /* text-align: left; */
+}
+
+.top-spacer {
+	padding-top:5px;
+}
+
+.footer_nav-font {
+   font-size:10px; font-weight:normal; vertical-align: middle; text-align: center; font-family: "Roboto", sans-serif}
+  
+.footer_nav-space {
+  padding-top:15px; padding-bottom:5px; padding-left:10px; padding-right:10px;}
+  
+.col-space {
+  padding:3px;}
+  
