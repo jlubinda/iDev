@@ -12,7 +12,7 @@
 			<div class="card-panel z-depth-4">
 			  <div class="row valign-wrapper">
 			    <div class="col s4">
-			      <img src="apps/website/resources/images/person.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+			      <img src="apps/website/resources/images/person1.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
 			    </div>
 			    <div class="col s8">
 			      <span class="black-text">
@@ -27,7 +27,7 @@
 			<div class="card-panel z-depth-4">
 			  <div class="row valign-wrapper">
 			    <div class="col s4">
-			      <img  src="apps/website/resources/images/person.jpg"  alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+			      <img  src="apps/website/resources/images/person2.jpg"  alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
 			    </div>
 			    <div class="col s8">
 			      <span class="black-text">
@@ -42,7 +42,7 @@
 			<div class="card-panel z-depth-4">
 			  <div class="row valign-wrapper">
 			    <div class="col s4">
-			      <img  src="apps/website/resources/images/person.jpg"  alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+			      <img  src="apps/website/resources/images/person1.jpg"  alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
 			    </div>
 			    <div class="col s8">
 			      <span class="black-text">
@@ -57,7 +57,7 @@
 			<div class="card-panel z-depth-4">
 			  <div class="row valign-wrapper">
 			    <div class="col s4">
-			      <img  src="apps/website/resources/images/person.jpg"  alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+			      <img  src="apps/website/resources/images/person1.jpg"  alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
 			    </div>
 			    <div class="col s8">
 			      <span class="black-text">
@@ -72,7 +72,7 @@
 			<div class="card-panel z-depth-4">
 			  <div class="row valign-wrapper">
 			    <div class="col s4">
-			      <img  src="apps/website/resources/images/person.jpg"  alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+			      <img  src="apps/website/resources/images/person1.jpg"  alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
 			    </div>
 			    <div class="col s8">
 			      <span class="black-text">
@@ -87,7 +87,7 @@
 			<div class="card-panel z-depth-4">
 			  <div class="row valign-wrapper">
 			    <div class="col s4">
-			      <img  src="apps/website/resources/images/person.jpg"  alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+			      <img  src="apps/website/resources/images/person2.jpg"  alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
 			    </div>
 			    <div class="col s8">
 			      <span class="black-text">
