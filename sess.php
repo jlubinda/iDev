@@ -47,6 +47,34 @@ else
 
 
 
+if(function_exists("loginFunc"))
+{
+	
+}
+else
+{
+	function loginFunc(){
+		include("login.php");
+	}
+
+}
+
+
+
+if(function_exists("logoutFunc"))
+{
+	
+}
+else
+{
+	function logoutFunc(){
+		include("logout.php");
+	}
+
+}
+
+
+
 if(function_exists("SesVar"))
 {
 	
@@ -138,7 +166,7 @@ else
 	function check_auth()
 	{
 	include find_file("cnct.php");
-	//"USER_PASS",$_POST['Password'],"","USER_ID",$_POST['Username'],"users"
+	//"USER_PASS",$_POST['Password'],"","USER_ID",$_POST['Username'],"users";
 	$searchtype = "Password";
 
 	trim($_REQUEST["searchterm"]);
@@ -148,14 +176,10 @@ else
 	$searchterm = md5($searchtrm);
 	$users = trim($_REQUEST["Username"]);		
 		
-		//echo $query."<br>";
-		echo "<br><br><br>checkAccount Login: ";
-		echo "<br>".$users;
-		echo "<br>";
-		echo "<br>";
-		echo "<br>";
-		print_r (checkAccount("LOGIN",$users,$searchtrm));
-		echo "<br>";
+		//echo "checkAccount Login: ";
+		//echo $searchtrm."<br>";
+		//print_r (checkAccount("LOGIN",$users,$searchtrm));
+		//echo "|<br>";
 			
 		include "hours.php";
 
@@ -190,26 +214,16 @@ else
 			$MaxTime2 = getSessionData($users,"TIME","Logged Out");
 			$date_set2 = getSessionData($users,"DATE","Logged Out");
 			
-			$current = strtotime(date("Y-m-d H:i"));
-			$sessionTime = (getSessionSetting("DURATION")*60*60);
-			
-			
-			if(($current-$MaxTime)>=$sessionTime)
+			echo "Last Logged on at: ".$date_set."<br>";
+			echo "Last Logged Off at: ".$date_set2."<br>";
+
+			if($MaxTime2>=$MaxTime)
 			{
-				$lockoutx="0";
+			$lockoutx="0";
 			}
 			else
 			{
-				if($MaxTime2>=$MaxTime)
-				{
-				$lockoutx="0";
-				}
-				else
-				{
-					echo "<p align='center'>Last Logged on at: ".$date_set."<br>";
-					echo "Your session will automatically be reset in ".getSessionSetting("DURATION")." hours time.<br></p>";
-					$lockoutx="1";
-				}
+			$lockoutx="1";
 			}
 
 			$y = explode(" ", $date_set);
@@ -242,7 +256,7 @@ else
 				 {
 				 $lockout="0";
 				 
-					if (($searchterm==$Password)&&($users==$LoginNames || $users==$Email || standadizesMobile($users)==$Mobile))
+					if ((checkAccount("CHECK LOGIN",$users,$searchtrm)==1)&&($users==$LoginNames || $users==$Email || standadizesMobile($users)==$Mobile))
 					{
 						$userSess = createSession($users);
 						
@@ -283,7 +297,7 @@ else
 			{
 				 $lockout="0";
 				 
-					if (($searchterm==$Password)&&($users==$LoginNames || $users==$Email || standadizesMobile($users)==$Mobile))
+					if ((checkAccount("CHECK LOGIN",$users,$searchtrm)==1)&&($users==$LoginNames || $users==$Email || standadizesMobile($users)==$Mobile))
 					{
 						$userSess = createSession($users);
 						
@@ -303,6 +317,11 @@ else
 						
 						//set session cookie
 						$_SESSION[SesUID()] = $ccc;
+						
+						$userID = getUserData($users,"USERID");;
+						
+						$_SESSION["APIKey"] = "7466E7624FED474FA086FD0E6A7C00DD";
+						
 					
 						//$sql21 = "INSERT INTO system_log (id,PageID,userID) VALUES ('','Login','".$userID."');";
 						//$res21 = mysqli_query($db,$sql21);
@@ -319,7 +338,6 @@ else
 			}
 		}
 	}
-
 }
 
 
