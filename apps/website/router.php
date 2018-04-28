@@ -20,7 +20,8 @@ $return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,'co
 $return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,'faqs','faqs.php','file',$types,"faqs");
 $return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,'privacy','privacy.php','file',$types);
 $return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,'terms','terms.php','file',$types);
-$return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,'logout','logout','function',$types,"fgf");
+$return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,'login','loginFunc','function',$types,"fgf");
+$return = $return + router($rType,$GLOBALS[$appName."appAccessURL"],$current,'logout','logoutFunc','function',$types,"fgf");
 
 
 if($return==0)
