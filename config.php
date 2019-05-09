@@ -24,7 +24,11 @@ else
 		$iDevConfig["STORE_ACCESS"] = "LOGGED IN"; //how should visitors access your store: LOGGIN IN (only when they are logged in), OPEN (everyone can access the store)
 		$iDevConfig["YOUR_STORE"] = ""; //TBA
 		$iDevConfig["REDIRECT"] = "YES"; //should redirect be enabled?
-		
+		$iDevConfig["DBNAME"] = "project_db"; //specify database name
+		$iDevConfig["DBUSER"] = "root"; //specify database username
+		$iDevConfig["DBPWD"] = ""; //specify database password
+		$iDevConfig["DBHOST"] = "localhost"; //specify database host
+		$iDevConfig["DBPORT"] = ""; //specify database port
 		return $iDevConfig;
 	}
 }
