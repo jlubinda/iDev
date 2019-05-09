@@ -5,8 +5,12 @@ if(function_exists("iDevConfig"))
 }
 else
 {
-	function iDevConfig(){
+	function iDevConfig($ax=""){
+		
+		$a = strtoupper(trim($ax));
+		
 		$iDevConfig["ACCESS"] = "http"; //how should visitors access your site: https (only via https), http (either https or http)
+		$iDevConfig["API_KEY"] = ""; //your Applodes.com API KEY
 		$iDevConfig["URL"] = "localhost/vp4"; //what is yours site's url
 		$iDevConfig["BACKGROUND_COLOR"] = "#222";
 		$iDevConfig["LOGIN_URL"] = "./?ref=vehicles.php";
@@ -29,7 +33,15 @@ else
 		$iDevConfig["DBPWD"] = ""; //specify database password
 		$iDevConfig["DBHOST"] = "localhost"; //specify database host
 		$iDevConfig["DBPORT"] = ""; //specify database port
-		return $iDevConfig;
+		
+		if($a=="" || !(isset($a)) || $a==null)
+		{
+			return $iDevConfig[$a]; //specify database port
+		}	
+		else
+		{
+			return $iDevConfig;
+		}
 	}
 }
 ?>
